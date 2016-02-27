@@ -8,17 +8,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script>$( document ).ready(function() {
             $("#gijon").toggleClass( "active" );
-        });</script>
-    <script>$( document ).ready(function() {
             $("#gastos").toggleClass( "active" );
+            $("#articulo").toggleClass( "active" );
         });</script>
     <title></title>
 </head>
 <body>
 {% include "navbar.html" %}
-{% include "tituloPagina.html" %}
 {% include "menuGijon.html" %}
-
-<iframe width="620" height="515" src="https://charts.qlikcloud.com/56cddb6e30c3c11100b1aadf/chart.html" frameborder="0"></iframe>    </p>
+<section>
+    <div class="col-md-2">
+{% include "menuLateralGijonGastos.html" %}
+        </div>
+<div class="col-md-10">
+</div>
+</section>
 </body>
 </html>

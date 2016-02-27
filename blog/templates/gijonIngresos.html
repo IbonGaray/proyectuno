@@ -12,23 +12,20 @@
         });</script>
     <script>
         $( document ).ready(function() {
-            $("#cuatro").toggleClass( "active" );
+            $("#ingresos").toggleClass( "active" );
         });</script>
     <title></title>
 </head>
 <body>
 {% include "navbar.html" %}
-{% include "tituloPagina.html" %}
 {% include "menuGijon.html" %}
-
 <section>
-        <iframe width="620" height="515" src="https://charts.qlikcloud.com/56cddbdc30c3c11100b1aae1/chart.html" frameborder="0"></iframe>
-
-        <iframe width="620" height="515" src="https://charts.qlikcloud.com/56cddbdc30c3c11100b1aae1/chart.html" frameborder="0"></iframe>
-
-        <iframe width="620" height="515" src="https://charts.qlikcloud.com/56cddbdc30c3c11100b1aae1/chart.html" frameborder="0"></iframe>
-
-        <iframe width="620" height="515" src="https://charts.qlikcloud.com/56cddbdc30c3c11100b1aae1/chart.html" frameborder="0"></iframe>
+    <div class="col-md-2">
+{% include "menuLateralGijonGastos.html" %}
+        </div>
+<div class="col-md-10">
+<iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18a1bf6dc0f1000095f5a/chart.html" frameborder="0"></iframe>
+</div>
 </section>
 </body>
 </html>
